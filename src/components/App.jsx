@@ -1,4 +1,5 @@
 import { Profile } from "components/Profile/Profile";
+import { Statistics } from "components/Statistics/Statistics";
 import user from "../user.json";
 
 export const App = () => {
@@ -14,6 +15,7 @@ export const App = () => {
       }}
     >
       <Profile profileInfo={user} />
+      <Statistics />
     </div>
   );
 };

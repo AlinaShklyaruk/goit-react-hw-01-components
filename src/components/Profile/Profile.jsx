@@ -4,7 +4,7 @@ import { Interactions } from "components/Profile/Interactions/Interactions";
 
 
 export const Profile = ({profileInfo}) => {
-    return <div className={css.profile}>
+    return <section className={css.profile}>
         <Info
             username={profileInfo.username}
             tag={profileInfo.tag}
@@ -16,5 +16,5 @@ export const Profile = ({profileInfo}) => {
             views={profileInfo.stats.views}
             likes={profileInfo.stats.likes}
         />
-    </div>;
+    </section>;
 }
