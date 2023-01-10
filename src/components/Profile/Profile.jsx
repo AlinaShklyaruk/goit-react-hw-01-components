@@ -1,6 +1,6 @@
 import css from "./Profile.module.css";
 import { Info } from "components/Profile/Info/Info";
-import { Statistics } from "components/Profile/Statictics/Statistics";
+import { Interactions } from "components/Profile/Interactions/Interactions";
 
 
 export const Profile = ({profileInfo}) => {
@@ -11,7 +11,7 @@ export const Profile = ({profileInfo}) => {
             location={profileInfo.location}
             avatar={profileInfo.avatar}
         />
-        <Statistics
+        <Interactions
             followers={profileInfo.stats.followers}
             views={profileInfo.stats.views}
             likes={profileInfo.stats.likes}

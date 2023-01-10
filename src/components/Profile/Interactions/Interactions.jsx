@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
-import css from "./Statistics.module.css";
+import css from "./Interactions.module.css";
 
-export const Statistics = ({ followers, views, likes }) => {
+export const Interactions = ({ followers, views, likes }) => {
     return <ul className={css.stats}>
         <li>
             <span className={css.label}>Followers</span>
@@ -18,7 +18,7 @@ export const Statistics = ({ followers, views, likes }) => {
     </ul>;
 };
 
-Statistics.propTypes = {
+Interactions.propTypes = {
     followers: PropTypes.number.isRequired,
     views: PropTypes.number.isRequired,
     likes: PropTypes.number.isRequired,
