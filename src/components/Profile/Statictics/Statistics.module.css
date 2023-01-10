@@ -17,7 +17,7 @@ border-top: 1px solid #afb1b8;
 }
 
 .stats li:not(:last-child) {
-    border-right: 1px solid #212121;
+    border-right: 1px solid #afb1b8;
 
 }
 
