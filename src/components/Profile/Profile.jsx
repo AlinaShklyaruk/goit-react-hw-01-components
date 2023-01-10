@@ -1,6 +1,6 @@
 import css from "./Profile.module.css";
 import { Info } from "components/Profile/Info/Info";
-import { Statistics } from "./Statictics/Statistics";
+import { Statistics } from "components/Profile/Statictics/Statistics";
 
 
 export const Profile = ({profileInfo}) => {
