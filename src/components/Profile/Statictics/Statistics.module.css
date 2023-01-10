@@ -1,0 +1,35 @@
+.stats {
+list-style: none;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #f5f4fa;
+border-top: 1px solid #afb1b8;
+}
+
+.stats li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc((100% - 24px) / 3);
+    padding: 30px 6px;
+}
+
+.stats li:not(:last-child) {
+    border-right: 1px solid #212121;
+
+}
+
+.label {
+font-size: 24px;
+font-weight: 400;
+margin-bottom: 20px;
+color: #757575;
+}
+
+.quantity {
+font-size: 24px;
+font-weight: 700;
+}
+
