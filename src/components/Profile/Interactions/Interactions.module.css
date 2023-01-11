@@ -4,7 +4,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 background-color: #f5f4fa;
-border-top: 1px solid #afb1b8;
+border-top: 1px solid var(--light-border-color);
 }
 
 .stats li {
@@ -17,15 +17,14 @@ border-top: 1px solid #afb1b8;
 }
 
 .stats li:not(:last-child) {
-    border-right: 1px solid #afb1b8;
-
+    border-right: 1px solid var(--light-border-color);
 }
 
 .label {
 font-size: 24px;
 font-weight: 400;
 margin-bottom: 20px;
-color: #757575;
+color: var(--secondary-text-color);
 }
 
 .quantity {
