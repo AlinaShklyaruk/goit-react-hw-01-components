@@ -1,0 +1,41 @@
+.table_section {
+    width: 500px;
+    border: 1px solid #a6b3bd;
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    margin: 60px 100px;
+}
+
+table {
+    text-decoration: none;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+th {
+    font-weight: normal;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #00bcd5;
+}
+
+td {
+    font-size: 14px;
+    color: #757575;
+}
+
+tr > td {
+    padding: 10px 5px;
+    line-height: 14px;
+    vertical-align: middle;
+    border: 1px solid #a6b3bd;
+}
+
+tr:hover td {
+    color: #354251;
+    background-color: #ebf1f5;
+    
+}
+
