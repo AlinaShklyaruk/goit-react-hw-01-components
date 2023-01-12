@@ -1,21 +1,38 @@
+import PropTypes from 'prop-types';
 import css from "./Profile.module.css";
-import { Info } from "components/Profile/Info/Info";
-import { Interactions } from "components/Profile/Interactions/Interactions";
 
-
-export const Profile = ({profileInfo}) => {
+export const Profile = ({username, tag, location, avatar, followers, views, likes}) => {
     return <section className={css.profile}>
-        <Info
-            username={profileInfo.username}
-            tag={profileInfo.tag}
-            location={profileInfo.location}
-            avatar={profileInfo.avatar}
-        />
-        <Interactions
-            followers={profileInfo.stats.followers}
-            views={profileInfo.stats.views}
-            likes={profileInfo.stats.likes}
-        />
+        <div className={css.description}>
+        <img className={css.avatar} alt={`${username} avatar`} src={avatar} width="280"/>
+        <p className={css.name}>{username}</p>
+        <p className={css.tag}>{tag}</p>
+        <p className={css.location}>{location}</p>
+        </div>
+        <ul className={css.stats}>
+        <li>
+            <span className={css.label}>Followers</span>
+            <span className={css.quantity}>{followers}</span>
+        </li>
+        <li>
+            <span className={css.label}>Views</span>
+            <span className={css.quantity}>{views}</span>
+        </li>
+        <li>
+            <span className={css.label}>Likes</span>
+            <span className={css.quantity}>{likes}</span>
+        </li>
+    </ul>
     </section>;
+}
+
+Profile.propTypes = {
+    username: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    avatar: PropTypes.string.isRequired,
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
 }
 
